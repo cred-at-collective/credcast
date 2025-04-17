@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | {site_name}</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            theme: 'dark',
+            securityLevel: 'loose',
+            startOnLoad: true
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="/scripts.js"></script>
+</head>
+<body class="blog-layout">
+    <div class="nav-sidebar">
+        <div class="nav-header">
+            <h2><a href="/">{site_name}</a></h2>
+        </div>
+        <div class="post-list">
+            {post_links}
+        </div>
+    </div>
+    <div class="content-area">
+        <article>
+            <h1>{title}</h1>
+            <time datetime="{date_iso}">{date_display}</time>
+            
+            <div class="content">
+                {content}
+            </div>
+            
+            <div class="tags">
+                {tags}
+            </div>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mermaid Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark'
+        });
+    </script>
+</head>
+<body style="background-color: #000000; color: #bbbbbb; font-family: 'Anonymous Pro', monospace;">
+    <h1>Mermaid Test</h1>
+    <div class="mermaid">
+        graph LR
+        c1[("⚛️")]
+        c2[("💫")]
+        c3[("🤝")]
+        c4[("🦋")]
+        c5[("🕊️")]
+        w1a["particles"]
+        w1b["physics"]
+        w2a["manifest"]
+        w2b["chaos"]
+        w3a["bond"]
+        w3b["alliance"]
+        w4a["evolve"]
+        w4b["metamorphosis"]
+        w5a["peace"]
+        w5b["release"]
+        %% Emoji connections (bold)
+        c1 --- c2
+        c1 --- c3
+        c1 --- c4
+        c1 --- c5
+        c2 --- c3
+        c2 --- c4
+        c2 --- c5
+        c3 --- c4
+        c3 --- c5
+        c4 --- c5
+        %% Semantic relationships (dotted)
+        c1 -.-> w1a
+        c1 -.-> w1b
+        c2 -.-> w2a
+        c2 -.-> w2b
+        c3 -.-> w3a
+        c3 -.-> w3b
+        c4 -.-> w4a
+        c4 -.-> w4b
+        c5 -.-> w5a
+        c5 -.-> w5b
+    </div>
+    <hr>
+    <div class="mermaid">
+        graph LR
+        p1["particles - ⚛️ - physics - manifest - 💫 - chaos - bond - 🤝 - alliance - evolve - 🦋 - metamorphosis - peace - 🕊️ - release"]
+    </div>
+</body>
+</html>

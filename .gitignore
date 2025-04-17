@@ -1,0 +1,14 @@
+# Build outputs
+build/
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Backup files
+*.bak
+
+# OS files
+.DS_Store
